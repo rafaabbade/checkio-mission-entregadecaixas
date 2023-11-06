@@ -1,16 +1,19 @@
 <!-- Describe task in general -->
 
-<p>
-    Crie uma função que receba dois números inteiros como parâmetros e retorne a soma desses números.
-</p>
+<p>Você precisa transportar três caixas vazias usando um drone que pode levantar uma caixa por vez apenas em cada viagem. Quer dizer, sempre dá para transportar as três caixas vazias fazendo três viagens do drone. Mas talvez dê para fazer menos do que três viagens, se for possível colocar uma caixa dentro de outra. As caixas têm formato de cubo e a única restrição para uma caixa ser colocada dentro de outra é o tamanho, não importando o peso.</p>
+<p>Uma caixa de tamanho X pode ser colocada dentro de uma caixa de tamanho Y se X < Y. Note, portanto, que uma caixa não cabe dentro de outra do mesmo tamanho. Além disso, duas caixas de tamanhos X e Y podem ser colocadas, lado a lado, dentro de uma caixa de tamanho Z se (X+Y) < Z. </p>
+<p>A figura ilustra as quatro configurações possíveis para o drone fazer uma viagem.</p>
+         <img  title="example" src="{{MEDIA}}drone.png" alt="example" style="max-height: 300px"/>
+<p>Neste problema, os tamanhos das três caixas são dados em ordem crescente e seu programa deve computar o número mínimo de viagens que o drone pode fazer para transportar todas as três caixas.</p>
+
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada: </strong> Dois números inteiros a e b.
+    <strong>Entrada: </strong> A primeira entrada contém um inteiro A. A segunda contém um inteiro B. A terceira contém um inteiro C. Os três inteiros representam os tamanhos das três caixas.
 </p>
 
 <p>
-    <strong>Saída: </strong> Um número inteiro, que é a soma de a e b. 
+    <strong>Saída: </strong>Seu programa deve imprimir uma linha contendo um inteiro, representando o número mínimo de viagens que o drone pode fazer para transportar todas as três caixas.
 </p>
 
 
@@ -25,9 +28,10 @@
 countConsecutiveSummers(99) == 6
 </pre>
 {% else %}
-<pre class="brush: python">soma(2,3) == 5
-soma(-1,5) == 4
-soma(0,0) == 0
+<pre class="brush: python">minimo_viagens(1, 2, 4) == 1
+minimo_viagens(1, 2, 2) == 2
+minimo_viagens(2, 2, 5) == 1
+minimo_viagens(2, 2, 2) == 3    
 </pre>
 {% endif %}
 </div>
