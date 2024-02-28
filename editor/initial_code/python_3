@@ -11,9 +11,9 @@ print(entrega(1,2,2))
 assert entrega(1, 2, 2) == 2 
     
 # testa a função com um número negativo como parâmetro
-assert soma(2, 2, 2) == 3
+assert entrega(2, 2, 2) == 3
     
 # testa a função com zero como parâmetro
-assert soma(1, 2, 3) == 1
+assert entrega(1, 2, 3) == 1
     
 print("Seu código passou pelos testes, clique em Check para avançar!")
