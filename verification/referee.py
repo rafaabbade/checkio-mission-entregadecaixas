@@ -38,7 +38,7 @@ api.add_listener(
     CheckiOReferee(
         tests=TESTS,
         function_name={
-            "python": "minimo_viagens",
+            "python": "entrega",
             "js": "countConsecutiveSummers"
         },
         cover_code={
