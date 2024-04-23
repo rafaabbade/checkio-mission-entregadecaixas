@@ -20,7 +20,7 @@ TESTS = {
         },
         {
             "input": [2,2,5],
-            "answer": 2
+            "answer": 1
         }
     ],
     "Extra": [
